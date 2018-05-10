@@ -155,7 +155,7 @@ cd ${PNDA_STAGE}
 
 for repo in ${!bom[@]}
 do
-    git clone --branch ${bom[${repo}]} https://github.com/pndaproject/${repo}.git
+    git clone --branch ${bom[${repo}]} https://github.com/TharanyaS/${repo}.git
     cd ${repo}
     if [[ ${MODE} == "RELEASE" ]]; then
         VERSION=$(git describe --abbrev=0 --tags)
