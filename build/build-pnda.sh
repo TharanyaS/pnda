@@ -61,14 +61,14 @@ function invocation_error {
 # List of PNDA components
 #
 declare -A bom=(
-#[platform-console-backend]=
-#[platform-console-frontend]=
-#[platform-data-mgmnt]=
-#[platform-deployment-manager]=
-#[platform-libraries]=
-#[platform-package-repository]=
-#[platform-testing]=
-#[platform-gobblin-modules]=
+[platform-console-backend]=
+[platform-console-frontend]=
+[platform-data-mgmnt]=
+[platform-deployment-manager]=
+[platform-libraries]=
+[platform-package-repository]=
+[platform-testing]=
+[platform-gobblin-modules]=
 )
 
 # List of upstream projects
