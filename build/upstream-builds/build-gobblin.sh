@@ -44,7 +44,7 @@ fi
 
 
 if [[ ${MODE} == "PNDA" ]]; then
-    GB_VERSION=$(wget -qO- https://raw.githubusercontent.com/pndaproject/platform-salt/${ARG}/pillar/services.sls | shyaml get-value gobblin.release_version)
+    GB_VERSION=$(wget -qO- https://raw.githubusercontent.com/TharanyaS/platform-salt/${ARG}/pillar/services.sls | shyaml get-value gobblin.release_version)
 
 elif [[ ${MODE} == "UPSTREAM" ]]; then
     GB_VERSION=${ARG}

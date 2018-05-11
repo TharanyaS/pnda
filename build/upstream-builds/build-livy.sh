@@ -28,7 +28,7 @@ else
 fi
 
 if [[ ${MODE} == "PNDA" ]]; then
-    LV_VERSION=$(wget -qO- https://raw.githubusercontent.com/pndaproject/platform-salt/${ARG}/pillar/services.sls | shyaml get-value livy.release_version)
+    LV_VERSION=$(wget -qO- https://raw.githubusercontent.com/TharanyaS/platform-salt/${ARG}/pillar/services.sls | shyaml get-value livy.release_version)
 elif [[ ${MODE} == "UPSTREAM" ]]; then
     LV_VERSION=${ARG}
 fi

@@ -34,7 +34,7 @@ else
 fi
 
 if [[ ${MODE} == "PNDA" ]]; then
-    KM_VERSION=$(wget -qO- https://raw.githubusercontent.com/pndaproject/platform-salt/${ARG}/pillar/services.sls | shyaml get-value kafkamanager.release_version)
+    KM_VERSION=$(wget -qO- https://raw.githubusercontent.com/TharanyaS/platform-salt/${ARG}/pillar/services.sls | shyaml get-value kafkamanager.release_version)
 elif [[ ${MODE} == "UPSTREAM" ]]; then
     KM_VERSION=${ARG}
 fi

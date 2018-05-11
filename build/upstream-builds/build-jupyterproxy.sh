@@ -35,7 +35,7 @@ else
 fi
 
 if [[ ${MODE} == "PNDA" ]]; then
-    JP_VERSION=$(wget -qO- https://raw.githubusercontent.com/pndaproject/platform-salt/${ARG}/pillar/services.sls | shyaml get-value jupyterproxy.release_version)
+    JP_VERSION=$(wget -qO- https://raw.githubusercontent.com/TharanyaS/platform-salt/${ARG}/pillar/services.sls | shyaml get-value jupyterproxy.release_version)
 elif [[ ${MODE} == "UPSTREAM" ]]; then
     JP_VERSION=${ARG}
 fi
